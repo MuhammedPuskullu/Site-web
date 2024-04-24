@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+body {
+	margin : 0;
+	padding : 0;
+	display : flex;
+	justify-content : space-between;
+	flex-direction : column;
+	margin : 0;
+	font-family: "Roboto", sans-serif;
+}
+
+/* FEUILLE DE STYLE POUR LA BARRE DE NAVIGATION  */
+
+#menu {
+	box-sizing: border-box;
+	height : 13%;
+	width : 100%;
+	padding : 2em;
+	background-color : rgb(51, 102, 179);
+	font-size : large;
+	display : flex;  
+	justify-content: space-between; 
+	/* flex-direction: row; */
+	align-items : center;
+	font-weight : bold;
+	position: fixed;
+	border-radius: 0% 0% 10px 10px;
+    z-index: 999;
+       
+}
+.menu2 {
+	display: flex;
+	font-size: 1em;
+
+}
+.menu2 > div {
+	padding: 0 10px;
+}
+.item-left img {
+	width : 100px;
+	display : block;
+
+}
+.menuitem > a {
+	font-size: 18px;
+	color : rgb(225, 232, 255);
+	text-decoration: none;
+}
+/* FIN DE LA FEUILLE DE STYLE POUR LA BARRE DE NAVIGATION  */
+
+
+
+
+
+/* FEUILLE DE STYLE POUR LE RESTE DE LA PAGE  */
+
+.textediv {
+	display: flex;
+    flex-direction : column;
+	height : auto;
+    margin-top : 11%;
+	background-color : white;
+    padding : 20px;
+}
+.textediv h1{
+    margin-left : 50px;
+    margin-top : 50px;
+    text-decoration: underline;
+}
+
+table {
+    border: 2px solid rgb(140 140 140);
+    margin : 20px;
+
+  }
+  
+  th, td {
+    border: 1px solid rgb(160 160 160);
+  }
+
+.textediv2 {
+	background-color: whitesmoke;
+	display : flex;
+    flex-direction : column;
+	padding : 20px;
+}
+
+.textediv2 h1{
+	margin : 100px 20px 100px 20px;
+
+}
+
+
+
+.textediv4 {
+    background-color: whitesmoke;
+	display : flex;
+    flex-direction : column;
+	padding : 20px;
+}
+
+.textediv4 h1{
+	margin : 100px 20px 100px 20px;
+}
+
+.textediv5 {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    padding : 20px;
+    align-items :
+     center;
+}
+.textediv5 h1{
+	margin : 100px 20px 100px 20px;
+}
+.textediv6 h1{
+	margin : 100px 20px 100px 20px;
+}
+
+input{
+	margin-top : 5px;
+	padding : 10px 5px 10px 30px;
+	border : 2px solid #c9c9c9;
+	outline-color : grey;
+	border-radius : 5px;
+}
+textarea {
+    margin-top : 5px;
+    padding : 8px 10px 10px 30px;
+    background-color: #f8f8f8;
+    border : 2px solid #c9c9c9;
+    outline : none;
+    border-radius : 5px;
+    resize : none;
+}
+.bouton{
+    margin-top : 7%;
+    margin-bottom: 5%;
+}
+.bouton button{
+	margin-top : 10px;
+	background-color :grey;
+	color : white; 
+	font-size : 15px;
+	border : none;
+	padding : 10px 20px;
+	border-radius : 5px;
+	outline : none;
+	cursor : pointer;
+    align-items: center;
+}
+.boite{
+    margin-top : 20px;
+	display :flex;
+	flex-direction: column;
+	position : relative;
+}
+
+.textediv6 {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    padding : 20px;
+    align-items : center;
+}
+form {
+    width : 40%;
+
+}
+.messagederreur{
+	align-items : center;
+  }
+  .messagederreur p{
+	text-align : center;
+	font-size : 16px ;
+	color : red;
+	margin : 5px;
+  }

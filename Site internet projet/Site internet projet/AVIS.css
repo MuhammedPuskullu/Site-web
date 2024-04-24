@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+body {
+	margin : 0;
+	padding : 0;
+	display : flex;
+	justify-content : space-between;
+	flex-direction : column;
+	margin : 0;
+	font-family: "Roboto", sans-serif;
+}
+#menu {
+	box-sizing: border-box;
+	height : 13%;
+	width : 100%;
+	padding : 2em;
+	background-color : rgb(51, 102, 179);
+	font-size : large;
+	display : flex;  
+	justify-content: space-between; 
+	/* flex-direction: row; */
+	align-items : center;
+	font-weight : bold;
+	position: fixed;
+	border-radius: 0% 0% 10px 10px;
+    z-index: 999;
+}
+.menu2 {
+	display: flex;
+	font-size: 1em;
+
+}
+.menu2 > div {
+	padding: 0 10px;
+}
+
+.item-left img {
+	width : 100px;
+	display : block;
+
+}
+.menuitem > a {
+	font-size: 18px;
+	color : rgb(225, 232, 255);
+	text-decoration: none;
+}
+
+.menu2 img{
+    width : 60px;
+    height : 50px;
+}
+
+
+/* DEBUT DE LA FEUILLE DE STYLE POUR LA PAGE AVIS  */
+/* PAGE REGALGE DES ARTICLES */
+#interfacedisc{
+
+    align-items: center;
+    justify-items: center;
+    width : 100%;
+    margin-top : 100px;
+}
+article {
+    height : 20%;
+    width : 80%;
+    display : flex;
+    flex-direction: column;
+    background-color : #c9c9c9;
+    border : 1px solid grey;
+    border-radius: 5px;
+    /* align-items : center; */
+    justify-content: space-around;
+    margin: 30px auto 30px auto;
+}
+#interfacedisc p{
+    text-align : left;
+    margin : 10px 20px 10px 20px;
+    background-color : #c9c9c9;
+    padding : 10px;
+    
+}
+
+
+#interfacedisc h1{
+    text-align : left;
+    margin : 10px 40px 10px 20px;
+    background-color : #c9c9c9;
+    padding : 10px;
+    border-bottom : 2px solid grey;
+    border-radius : 2px;
+}
+
+/* PARTIE POUR LE FORMULAIRE DE MESSAGE D'ENVOI  */
+form {
+    height : 20%;
+    width : 50%;
+    display : flex;
+    flex-direction: column;
+    background-color : #c9c9c9;
+    border : 1px solid grey;
+    border-radius: 5px;
+    /* align-items : center; */
+    justify-content: space-around;
+    margin: 30px auto 30px auto;
+}
+#interfacedisc .ecrire h1{
+    text-align : center;
+}
+i{
+	position : absolute;
+	left : 3px;
+	top : 18px;
+	padding : 0px 5px 5px 5px ;
+	color : rgb(18, 9, 39);
+}
+input{
+	margin-top : 5px;
+	padding : 10px 5px 10px 30px;
+	border : 2px solid #c9c9c9;
+	outline-color : grey;
+	border-radius : 5px;
+    width : 50%;
+}
+.bouton{
+    margin : 10px auto 40px auto;
+}
+.bouton button{
+	margin-top : 10px;
+	background-color :grey;
+	color : white; 
+	font-size : 15px;
+	border : none;
+	padding : 10px 20px;
+	border-radius : 5px;
+	outline : none;
+	cursor : pointer;
+	transition : transform 0.5s blue;
+}
+textarea {
+    margin-top : 5px;
+    padding : 8px 10px 10px 30px;
+    background-color: #f8f8f8;
+    border : 2px solid #c9c9c9;
+    outline : none;
+    border-radius : 5px;
+    resize : none;
+    width : 50%;
+    height : 5%;
+    /* display : flex;
+    align-items: center;
+    justify-content: center;
+     */
+}
+.boite{
+    margin-top : 20px;
+	display :flex;
+	flex-direction: column;
+	/* position : relative; */
+    justify-content: center;
+    align-items: center;
+}
+.reponse {
+  margin :0;
+}
+.messagederreur{
+    align-items : center;
+  }
+#interfacedisc form .messagederreur p{
+    text-align : center;
+    font-size : 16px ;
+    color : red;
+    margin : 4px;
+}
+
+
+/* PARTIE RESPONSIVE  */
+@media screen and (max-width:900px){
+	.ecrire {
+        height : 20%;
+        width : 80%;
+        display : flex;
+        flex-direction: column;
+        background-color : #c9c9c9;
+        border : 1px solid grey;
+        border-radius: 5px;
+        /* align-items : center; */
+        justify-content: space-around;
+        margin: 30px auto 30px auto;
+    }
+
+}

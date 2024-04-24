@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+body {
+	margin : 0;
+	padding : 0;
+	display : flex;
+	justify-content : space-between;
+	flex-direction : column;
+	margin : 0;
+	font-family: "Roboto", sans-serif;
+}
+#menu {
+	box-sizing: border-box;
+	height : 13%;
+	width : 100%;
+	padding : 2em;
+	background-color : rgb(51, 102, 179);
+	font-size : large;
+	display : flex;  
+	justify-content: space-between; 
+	/* flex-direction: row; */
+	align-items : center;
+	font-weight : bold;
+	position: fixed;
+	border-radius: 0% 0% 10px 10px;
+    z-index: 999;
+}
+.menu2 {
+	display: flex;
+	font-size: 1em;
+
+}
+.menu2 > div {
+	padding: 0 10px;
+}
+#texte {
+	grid-area : texte;
+	padding : 20px;
+}
+.item-left img {
+	width : 100px;
+	display : block;
+
+}
+.menuitem > a {
+	font-size: 18px;
+	color : rgb(225, 232, 255);
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PARTIE DE LA PAGE RDV  */
+.formulaire{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items : center;
+    justify-items: center;
+    border : 2px solid #c9c9c9;
+    border-radius: 5px;
+    margin-top : 3%;
+    background-color: whitesmoke;
+}
+
+.textediv1 {
+    background-color: white;
+	display : flex;
+	justify-content: space-around;
+	align-items: center;
+	padding : 7% 5%;
+}
+
+.rdvtexte {
+    margin-right : 12%;
+    margin-left: 5%;
+    text-align : left;
+}
+.bt{
+    display : flex;
+    justify-content: space-around;
+}
+                .btgauche{
+                    display : flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding : 5%;
+                    width : 40%;
+                }
+                .btdroite{
+                    
+                    display : flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 5%;
+                    width : 40%;
+                    
+}
+
+
+
+
+
+
+/* PARTIE DANS LE FORMULAIRE  */
+textarea {
+    margin-top : 5px;
+    padding : 8px 10px 10px 30px;
+    background-color: #f8f8f8;
+    border : 2px solid #c9c9c9;
+    outline : none;
+    border-radius : 5px;
+    resize : none;
+}
+select {
+    background-color: #f8f8f8;
+    border : 2px solid #c9c9c9;
+    outline : none;
+    border-radius : 5px;
+    margin-top : 5px;
+    padding : 8px 10px 10px 30px;
+    position : relative;
+    
+}
+.bouton button{
+	margin-top : 10px;
+	background-color :grey;
+	color : white; 
+	font-size : 15px;
+	border : none;
+	padding : 10px 20px;
+	border-radius : 5px;
+	outline : none;
+	cursor : pointer;
+	transition : transform 0.5s blue;
+}
+i{
+	position : absolute;
+	left : 3px;
+	top : 18px;
+	padding : 0px 5px 5px 5px ;
+	color : rgb(18, 9, 39);
+}
+input{
+	margin-top : 5px;
+	padding : 10px 5px 10px 30px;
+	border : 2px solid #c9c9c9;
+	outline-color : grey;
+	border-radius : 5px;
+}
+.boite{
+    margin-top : 20px;
+	display :flex;
+	flex-direction: column;
+	position : relative;
+}
+.textediv1 p{
+	font-size : 18px;
+	line-height : 160%;
+	padding : 3% 0;
+}
+.textediv1 h1{
+	line-height : 160%;
+	padding : 3% 0;
+}
+.bouton{
+    margin-top : 7%;
+    margin-bottom: 5%;
+}
+form h1{
+    text-align : center;
+    margin : 15px 40px 15px 40px;
+    padding : 10px 10px 40px 10px;
+    border-bottom : 2px solid grey;
+    border-radius : 2px;
+}
+.messagederreur{
+    align-items : center;
+  }
+.messagederreur p{
+    text-align : center;
+    font-size : 16px ;
+    color : red;
+    margin : 5px;
+}
+
+/* PARTIE RESPONSIVE  */
+
+@media screen and (max-width:1200px){
+	.bt{
+        display : flex;
+        flex-direction : column;
+        align-items: center;
+        width : 100%;
+    }
+    .btgauche{
+        display : flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding : 0%;
+         width : 80%;
+    }
+    .btdroite{
+        display : flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding : 0%;
+        width : 80%;
+    }
+    .textediv1 {
+        background-color: white;
+        display : flex;
+        justify-content: space-around;
+        flex-direction : column;
+        align-items: center;
+        padding : 15% 5% 5% 5%;
+       
+    }
+    .formulaire{
+        display : flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items : center;
+        justify-items: center;
+        border : 2px solid #c9c9c9;
+        border-radius: 5px;
+        margin : 0px 20px 20px 20px;
+        background-color: whitesmoke;
+        width : 80%;
+    }
+    .rdvtexte {
+        margin : 0px 20px 0px 20px;
+        text-align : left;
+        width : 80%;
+        
+    }
+    .textediv1 p{
+        font-size : 18px;
+        line-height : 160%;
+        padding : 0% 0% 6% 0%;
+        margin : 0px 20px 0px 20px;
+    }
+    .textediv1 h1{
+        line-height : 160%;
+        padding : 3% 0;
+        margin : 0px 20px 0px 20px;
+    }
+}
+@media screen and (max-width:640px){
+	.bt{
+        display : flex;
+        flex-direction : column;
+        align-items: center;
+        width : 100%;
+    }
+            .btgauche{
+                display : flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width : 80%;
+            }
+            .btdroite{
+                display : flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width : 80%;
+                
+}
+    .textediv1 {
+        background-color: white;
+        display : flex;
+        justify-content: space-around;
+        flex-direction : column;
+        align-items: center;
+        padding : 28% 2% 10% 2%;
+       
+    }
+    .formulaire{
+        display : flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items : center;
+        justify-items: center;
+        border : 2px solid #c9c9c9;
+        border-radius: 5px;
+        margin : 20px 20px 20px 20px;
+        background-color: whitesmoke;
+        width : 80%;
+    }
+}

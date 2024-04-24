@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+body {
+	margin : 0;
+	padding : 0;
+	display : flex;
+	justify-content : space-between;
+	flex-direction : column;
+	margin : 0;
+	font-family: "Roboto", sans-serif;
+}
+#page {
+	display :flex;
+	flex-direction: row;
+	justify-content : space-between;
+
+
+
+}
+/* FEUILLE DE STYLE POUR LA BARRE DE NAVIGATION  */
+
+#menu {
+	box-sizing: border-box;
+	height : 13%;
+	width : 100%;
+	padding : 2em;
+	background-color : rgb(51, 102, 179);
+	font-size : large;
+	display : flex;  
+	justify-content: space-between; 
+	/* flex-direction: row; */
+	align-items : center;
+	font-weight : bold;
+	position: fixed;
+	border-radius: 0% 0% 10px 10px;
+}
+.menu2 {
+	display: flex;
+	font-size: 1em;
+
+}
+.menu2 > div {
+	padding: 0 10px;
+}
+#texte {
+	grid-area : texte;
+	padding : 20px;
+}
+.item-left img {
+	width : 100px;
+	display : block;
+
+}
+.menuitem > a {
+	font-size: 18px;
+	color : rgb(225, 232, 255);
+	text-decoration: none;
+}
+/* FIN DE LA FEUILLE DE STYLE POUR LA BARRE DE NAVIGATION  */
+
+
+
+
+
+/* FEUILLE DE STYLE POUR LE RESTE DE LA PAGE  */
+
+.textediv {
+	display: flex;
+	justify-content: space-between;
+	height : 850px;
+	background-color : transparent;
+	background-image: url("/images/maison-ancienne-vs-maison-renovee.jpg");
+	background-repeat:no-repeat;
+	/*background-size: contain*/
+	background-position-x: center;
+	background-position-y: bottom;
+}
+
+.textediv .texteleft{
+	padding-top : 10%;
+	padding-left : 5%;
+	font-weight : bold;
+	text-align : left;
+}
+.textediv .texteright{
+	padding-top : 10%;
+	padding-right : 5%;
+	font-weight : bold;
+	text-align : right;
+}
+.textediv .texteright p{
+	font-size : 15px;
+}
+
+.buttonrenov {
+	text-decoration: none;
+	padding: 7px;
+	font-family: verdana;
+	font-size: 1em;
+	color: #ffffff;
+	background-color: #366092;
+	border-radius: 7px;
+	/* border: 1px solid #b8cce4; */
+}
+		
+		
+.buttonrenov:hover {
+	padding: 8px;
+	color: #FFFFFF;
+	background-color: #1f497d;
+	/* border: 1px solid #FFFFFF; */
+}
+
+
+
+/* PARTIE DE LA FEUILLE DE STYLE POUR LA PARTIE SUR NOUS  */
+.textediv2 {
+	background-color: whitesmoke;
+	display : flex;
+	justify-content: space-around;
+	align-items: center;
+	padding : 15% 200px;
+}
+.textediv2 .surnous{
+	margin-left: 15%;
+}
+.textediv2 h1{
+	font-size : auto;
+}
+.textediv2 p{
+	font-size : 20px;
+	line-height : 160%;
+	padding : 5% 0;
+
+}
+.textediv2 img{
+	padding : 20px;
+	width : 30%;
+	height : 30%;
+	padding-right : 50px;
+
+}
+
+.textediv3 {
+	padding : 100px 100px;
+}
+
+
+/* PARTIE DE LA FEULLE DE STYLE POUR LA GALERIE DE PHOTO  */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.textediv3 h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0;
+}
+
+.grille {
+	padding : 50px;
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 30px;
+}
+.grid-item {
+    width: 300px;
+    height: 200px;
+    background: #333;
+}
+/* FIN DE LA PARTIE GALERIE DE PHOTO  */
+
+
+/* PARTIE CONTACTEZ-NOUS DE LA FEUILLE DE STYLE  */
+
+.textediv4 {
+	background-color: whitesmoke;
+	display : flex;
+	justify-content: space-around;
+	align-items: center;
+	padding : 5% 20%;
+}
+.textediv4 .contacteznous{
+	margin-left: 5%;
+}
+.textediv4 h1{
+	font-size : 40px;
+	margin-bottom: 5%;
+}
+.textediv4 p{
+	font-size : 17px;
+	line-height : 160%;
+
+}
+.textediv4 img{
+	padding : 20px;
+	width : 30%;
+	height : 30%;
+	padding-right : 50px;
+
+}
+/* FIN DE LA PARTIE CONTACTEZ-NOUS DE LA FEILLE DE STYLE  */
+
+
+
+/* PARTIE DE LA FEUILLE DE STYLE POUR LA RESPONSIVITE */
+
+
+@media screen and (max-width:990px){
+	.textediv4, .textediv2{
+		flex-direction : column;
+		margin : 20px;
+		padding : 20px;
+	}
+	.textediv4, .textediv2 p{
+		padding : 20px;
+	}
+	
+
+}

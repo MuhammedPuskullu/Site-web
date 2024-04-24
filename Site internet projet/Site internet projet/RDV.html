@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link href="RDVcss.css" rel="stylesheet" type="text/css" />
+	<title>PEPF Travaux d'habitat</title>
+	<link rel="icon" type="image/png" href="images/Logo_PEPF.png"/>
+	<meta name="viewport" content="width = device-width, initial-scale=1">
+	
+</head>
+<body>
+	<div id="menu">
+		<div class="item-left"><img src="images/Logo2PEPF(2).png"></div>
+		<div class="menu2">
+			<div class="menuitem"><a href="/index-PEPF.html"><p>Accueil</p></a></div>
+			<div class="menuitem"><a href="/index-PEPF.html"><p>Sur nous</p></a></div>
+			<div class="menuitem"><a href="/index-PEPF.html"><p>Galerie</p></a></div>
+			<div class="menuitem"><a href="/index-PEPF.html"><p>Contact</p></a></div>
+			<div class="menuitem"><a href="/devis.html"><p>Demander un devis</p></a></div>
+			<div class="menuitem"><a href="/RDV.html"><p>Prenez un RDV</p></a></div>
+			<div class="menuitem"><a href="/AVIS1.html"><p>Avis</p></a></div>
+		</div>
+		<div class="menu2">
+			<div class="menuitem"><a href="connexion.html">Connexion</a></div>
+		</div>
+	</div>
+
+	<div class="textediv1">
+		<div class="rdvtexte">
+			<h1> Prenez un rendez-vous rapidemant avec notre specialiste </h1>
+			<p>Vous voulez aller plus vite dans la realisation de votre projet ?
+				<br> Alors n'attendez pas, prenez un rdv pour avoir un contacte direcet avec nous.</br>
+			</p>
+		</div>
+		<form class="formulaire" method="POST">
+			<h1> Prenez votre rdv avec notre specialiste </h1>
+			<div class="bt">
+				<div class="btgauche">	
+					<div class="boite">
+						<!-- <label for="heure">Selectionner l'heure du rdv :</label> -->
+						<select id="heure" name="heure">
+							<option value="1" selected>8h00</option >
+							<option value="1">9h00</option>
+							<option value="1">10h00</option>
+							<option value="1">16h00</option>
+							<option value="1">18h00</option>
+						</select>
+					</div>
+					<div class="boite">
+						<input type="text" placeholder="Type : Electricté, Rénovation..." name="type_rdv" title="Type : Electricté, Rénovation..."/>
+						<i class="fa-solid fa-user"></i>
+					</div>
+					<div class="boite">
+						<textarea cols="50" rows="3" maxlength="300" name="texte_devis" id="bloccomm" name="texte" placeholder="Mon rdv concerne un projet de renovation..."></textarea>
+						<i class="fa-solid fa-pen"></i>
+					</div>
+				</div>
+				<div class="btdroite">
+					<div class="boite">
+						<input type="date" placeholder="Date"  name="date_rdv" id="date" min="01/01/2024" max="01/01/2025" />
+						<i class="fa-solid fa-envelope"></i>
+					</div>
+					<div class="boite">
+						<input type="tel" name="tel_devis" id="tel" placeholder="+33 x xx xx xx xx" title="Téléphone au format +33 x xx xx xx xx"  />
+						<i class="fa-solid fa-phone"></i>
+					</div>
+					<div class="boite">
+						<input type="text"  placeholder="Adrresse postale" title="adresse" name="adresse_devis" id="adresse" >
+						<i class="fa-solid fa-house"></i>
+					</div>		
+				</div>
+			</div>
+			<div class="bouton">
+				<button type="submit" name="envoi_devis">Prendre le rdv</button>
+			</div>
+		</form>
+	</div>
+
+
+</body>
+</html>
